@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: monospace, monospace;
+    color: #a9a7b1;
+    background-color: black;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    width: calc(27.719+40);
+    padding: 20px;
+}
+.logo_text {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.maincontent {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+.spideylogo {
+    width: 100px;
+    height: 76px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.inf {
+    margin-top: 10px
+}
+.logo_cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2rem;
+    background: #fe5186;
+    margin-left: 5px;
+    border-radius: 1px;
+    animation: cursor 1s infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: cursor;
+}
+
+@keyframes cursor {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
